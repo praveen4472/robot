@@ -1,0 +1,142 @@
+.robot{
+    border: 1px solid black;
+    height: 300px;
+    width: 200px;
+    margin: 40px;
+}
+.head{
+    width: 100px;
+    height: 80px;
+    background-color: rgb(249, 65, 166);
+    border-radius: 50px 50px 0px 0px;
+    position: absolute;
+    margin-left: 50px;
+}
+.eye1{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+    border-radius: 100%;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.eye2{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+    border-radius: 100%;
+    margin-top: 60px;
+    margin-left: 70px;
+}
+.body{
+    width: 100px;
+    height:120px;
+    background-color: rgb(249, 65, 166);
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 90px;
+    border-radius: 0px 0px 25px 25px;
+    overflow: hidden;
+}
+.leg1{
+    width: 25px;
+    height:100px;
+    background-color: rgb(249, 65, 166);
+    position: absolute;
+    border-radius: 0px 0px 50px 50px;
+    z-index: -1;
+    margin-left: 65px;
+    margin-top: 150px;
+
+}
+.leg2{
+    width: 25px;
+    height:100px;
+    background-color: rgb(249, 65, 166);
+    position: absolute;
+    border-radius: 0px 0px 50px 50px;
+    margin-left: 113px;
+    z-index: -1;
+    margin-top: 150px;
+
+}
+.hand1{
+    width: 25px;
+    height:70px;
+    background-color: rgb(249, 65, 166);
+    position: absolute;
+    border-radius: 50px 50px 50px 50px;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+.hand2{
+    width: 25px;
+    height:70px;
+    background-color: rgb(249, 65, 166);
+    position: absolute;
+    border-radius: 50px 50px 50px 50px;
+    margin-left: 155px;
+    margin-top: 100px;
+}
+
+.robot:hover .hand1{
+    transform: rotate(45deg);
+    transform-origin: top;
+}
+
+.robot:hover .hand2{
+    transform: rotate(-40deg);
+    transform-origin: top;
+}
+.robot:hover .head{
+    margin-top: -10px;
+}
+.robot:hover .leg1{
+    animation: s 1s infinite;
+}
+.robot:hover .leg2{
+    animation: s 1s infinite;
+}
+@keyframes s{
+    0%{
+       margin-top: 160px; 
+    }
+    50%{
+        margin-top: 150px;
+    }
+    100%{
+        margin-top: 140px;
+    }
+}
+.robot:hover .eye1{
+    animation: em 1s infinite;
+}
+@keyframes em{
+    0%{
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    
+    50%{
+        margin-top: 35px;
+        margin-left: 20px;
+    
+    }
+}
+.robot:hover .eye2{
+    animation: em2 1s infinite;
+}
+@keyframes em2{
+    0%{
+        margin-top: 35px;
+        margin-left: 70px;
+    }
+    
+    50%{
+        margin-top: 50px;
+        margin-left: 70px;
+    
+    }
+}
